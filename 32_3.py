@@ -82,7 +82,7 @@ if aver_vill < aver_city:
         Ha = 1
     else:
         Ho = 1
-    P = 1 - norm.cdf(W)
+    P = norm.cdf(W)
 if aver_vill > aver_city:
     if W > norm.ppf(1 - a):
         Ha = 1
